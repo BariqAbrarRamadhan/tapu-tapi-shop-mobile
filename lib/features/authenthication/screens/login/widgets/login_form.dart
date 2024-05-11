@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:tapu_tapi_shop/features/authenthication/screens/password_configuration/forget_password.dart';
 import 'package:tapu_tapi_shop/features/authenthication/screens/signup/signup.dart';
 // import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
@@ -39,6 +40,10 @@ class TLoginForm extends StatelessWidget {
                     Checkbox(value: true, onChanged: (value) {}),
                     const Text(TTexts.rememberMe)
                   ],
+                ),
+                TextButton(
+                  onPressed: () => Get.to(() => const ForgetPassword()),
+                  child: const Text(TTexts.forgetPassword),
                 ),
               ],
             ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tapu_tapi_shop/common/widgets.login.signup/form_divider.dart';
-import 'package:tapu_tapi_shop/common/widgets.login.signup/social_buttons.dart';
+import 'package:tapu_tapi_shop/common/widgets/login_signup/form_divider.dart';
+import 'package:tapu_tapi_shop/common/widgets/login_signup/social_buttons.dart';
 // import 'package:tapu_tapi_shop/features/authenthication/screens/signup/widgets/terms_condition_checkbox.dart';
 import 'package:tapu_tapi_shop/features/authenthication/screens/signup/widgets/signup_form.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';

@@ -1,3 +1,5 @@
+import 'package:flutter/src/painting/text_style.dart';
+
 /// This class contains all the App Text in String formats.
 class TTexts {
   // -- GLOBAL Texts
@@ -68,4 +70,6 @@ class TTexts {
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Taimoor Sikander";
+
+  TTexts(String forgetPasswordTitle, {TextStyle? style});
 }

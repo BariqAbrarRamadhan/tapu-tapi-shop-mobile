@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tapu_tapi_shop/common/styles/spacing_styles.dart';
-import 'package:tapu_tapi_shop/common/widgets.login.signup/form_divider.dart';
-import 'package:tapu_tapi_shop/common/widgets.login.signup/social_buttons.dart';
+import 'package:tapu_tapi_shop/common/widgets/login_signup/form_divider.dart';
+import 'package:tapu_tapi_shop/common/widgets/login_signup/social_buttons.dart';
 import 'package:tapu_tapi_shop/features/authenthication/screens/login/widgets/login_header.dart';
 import 'package:tapu_tapi_shop/features/authenthication/screens/login/widgets/login_form.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: TSapcingStyles.paddingWithAppBarHeight,
+          padding: TSpacingStyle.paddingWithAppBarHeight,
           child: Column(
             children: [
               const TLoginHeader(),
