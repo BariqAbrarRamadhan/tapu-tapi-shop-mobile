@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tapu_tapi_shop/features/authenthication/screens/password_configuration/forget_password.dart';
 import 'package:tapu_tapi_shop/features/authenthication/screens/signup/signup.dart';
+import 'package:tapu_tapi_shop/navigation_menu.dart';
 // import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
 import 'package:tapu_tapi_shop/utils/constants/text_strings.dart';
@@ -51,10 +52,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
-                // style: ElevatedButton.styleFrom(
-                //   backgroundColor: TColors.secondary,
-                // ),
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: const Text(TTexts.signIn),
               ),
             ),
