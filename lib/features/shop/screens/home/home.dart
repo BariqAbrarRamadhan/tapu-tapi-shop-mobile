@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:tapu_tapi_shop/utils/constants/image_strings.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/section_heading.dart';
@@ -39,6 +41,16 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(
+                banners: [
+                  TImages.promoBanner1,
+                  TImages.promoBanner2,
+                  TImages.promoBanner3
+                ],
+              ),
+            )
           ],
         ),
       ),
