@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tapu_tapi_shop/common/widgets/appbar/appbar.dart';
-import 'package:tapu_tapi_shop/common/widgets/products.cart/cart_menu_icon.dart';
+import 'package:tapu_tapi_shop/common/widgets/products.cart/cart/cart_menu_icon.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/text_strings.dart';
 

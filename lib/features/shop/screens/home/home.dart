@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:tapu_tapi_shop/common/widgets/layouts/grid_layout.dart';
+import 'package:tapu_tapi_shop/common/widgets/products.cart/product_card/product_card_vertical.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/promo_slider.dart';
@@ -13,11 +15,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   THomeAppBar(),
@@ -42,12 +44,20 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(
-                banners: [
-                  TImages.promoBanner1,
-                  TImages.promoBanner2,
-                  TImages.promoBanner3
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  const TPromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+                  TGridLayout(
+                      itemCount: 2,
+                      itemBuilder: (_, index) => const TProductCardVertical()),
                 ],
               ),
             )
