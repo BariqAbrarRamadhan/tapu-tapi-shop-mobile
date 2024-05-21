@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:tapu_tapi_shop/features/personalization/screens/settings/settings.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/home.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/store/store.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/whislist/whislist.dart';
@@ -59,6 +60,6 @@ class NavigationController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const FavouriteScreen(),
-    Container(color: Colors.blue)
+    const SettingsScreen(),
   ];
 }
