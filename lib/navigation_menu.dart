@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/home.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/store/store.dart';
+import 'package:tapu_tapi_shop/features/shop/screens/whislist/whislist.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/helpers/helper_functions.dart';
 
@@ -57,7 +58,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.orange),
+    const FavouriteScreen(),
     Container(color: Colors.blue)
   ];
 }
