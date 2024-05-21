@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   THomeAppBar(),
                   SizedBox(height: TSizes.spaceBtwSections),
-                  TSeacrhContainer(text: 'Search in Store'),
+                  TSearchContainer(text: 'Search in Store'),
                   SizedBox(height: TSizes.spaceBtwSections),
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
@@ -54,6 +54,7 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner3
                     ],
                   ),
+                  TSectionHeading(title: 'Popular Product', onPressed: () {}),
                   const SizedBox(height: TSizes.spaceBtwSections),
                   TGridLayout(
                       itemCount: 2,

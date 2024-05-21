@@ -4,6 +4,7 @@ import 'package:tapu_tapi_shop/common/styles/shadows.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:tapu_tapi_shop/common/widgets/images/rounded_image.dart';
 import 'package:tapu_tapi_shop/common/widgets/icons/circular_icon.dart';
+import 'package:tapu_tapi_shop/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/product_price_text.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/product_title_text.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
@@ -62,53 +63,46 @@ class TProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(height: TSizes.spaceBtwItems / 2),
-            Padding(
-              padding: const EdgeInsets.only(left: TSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: TSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const TProductTitleText(
+                  TProductTitleText(
                     title: 'Green Nike Air Shoes',
                     smallSize: true,
                   ),
-                  const SizedBox(height: TSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text('Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(Iconsax.verify5,
-                          color: TColors.primary, size: TSizes.iconXs),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const TProductPriceText(
-                        price: '35.0',
-                      ),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(TSizes.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: TSizes.iconLg * 1.2,
-                          height: TSizes.iconLg * 1.2,
-                          child: Center(
-                              child: Icon(Iconsax.add, color: TColors.white)),
-                        ),
-                      ),
-                    ],
-                  )
+                  SizedBox(height: TSizes.spaceBtwItems / 2),
+                  TBrandTitleWithVerifiedIcon(title: 'Nike',),
                 ],
               ),
+            ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: TProductPriceText(
+                    price: '35.0',
+                  ),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: TSizes.iconLg * 1.2,
+                    height: TSizes.iconLg * 1.2,
+                    child:
+                        Center(child: Icon(Iconsax.add, color: TColors.white)),
+                  ),
+                ),
+              ],
             )
           ],
         ),
@@ -116,3 +110,4 @@ class TProductCardVertical extends StatelessWidget {
     );
   }
 }
+
