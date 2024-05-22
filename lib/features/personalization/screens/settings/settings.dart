@@ -36,61 +36,56 @@ class SettingsScreen extends StatelessWidget {
           padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
-              const TSectionHeading(title: 'Account Settings', showActionButton: false,),
+              const TSectionHeading(
+                title: 'Account Settings',
+                showActionButton: false,
+              ),
               const SizedBox(height: TSizes.spaceBtwItems),
               TSettingMenuTile(
-                icon: Iconsax.safe_home,
-                title: 'My Address',
-                subTitle: 'Set your address for delivery',
-                onTap: () {}
-              ),
+                  icon: Iconsax.safe_home,
+                  title: 'My Address',
+                  subTitle: 'Set your address for delivery',
+                  onTap: () {}),
               TSettingMenuTile(
-                icon: Iconsax.shopping_cart,
-                title: 'My Cart',
-                subTitle: 'View your cart items',
-                onTap: () {}
-              ),
+                  icon: Iconsax.shopping_cart,
+                  title: 'My Cart',
+                  subTitle: 'View your cart items',
+                  onTap: () {}),
               TSettingMenuTile(
-                icon: Iconsax.bag_tick,
-                title: 'My Orders',
-                subTitle: 'View your orders history',
-                onTap: () {}
-              ),
+                  icon: Iconsax.bag_tick,
+                  title: 'My Orders',
+                  subTitle: 'View your orders history',
+                  onTap: () {}),
               TSettingMenuTile(
-                icon: Iconsax.bank,
-                title: 'My Payment',
-                subTitle: 'View your payment methods',
-                onTap: () {}
-              ),
+                  icon: Iconsax.bank,
+                  title: 'My Payment',
+                  subTitle: 'View your payment methods',
+                  onTap: () {}),
               TSettingMenuTile(
-                icon: Iconsax.discount_shape,
-                title: 'My Coupons',
-                subTitle: 'View your coupons',
-                onTap: () {}
-              ),
+                  icon: Iconsax.discount_shape,
+                  title: 'My Coupons',
+                  subTitle: 'View your coupons',
+                  onTap: () {}),
               TSettingMenuTile(
-                icon: Iconsax.notification,
-                title: 'Notification',
-                subTitle: 'Set your notification preferences',
-                onTap: () {}
-              ),
+                  icon: Iconsax.notification,
+                  title: 'Notification',
+                  subTitle: 'Set your notification preferences',
+                  onTap: () {}),
               TSettingMenuTile(
-                icon: Iconsax.security_card,
-                title: 'Account Privacy',
-                subTitle: 'Set your account privacy settings',
-                onTap: () {}
-              ),
-
-              const SizedBox(height: TSizes.spaceBtwSections),
-              const TSectionHeading(title: 'Account Settings', showActionButton: false,),
+                  icon: Iconsax.security_card,
+                  title: 'Account Privacy',
+                  subTitle: 'Set your account privacy settings',
+                  onTap: () {}),
               const SizedBox(height: TSizes.spaceBtwItems),
-              const TSectionHeading(title: 'Account Settings', showActionButton: false,),
-              TSettingMenuTile(
-                icon: Iconsax.document_upload,
-                title: 'Load Data',
-                subTitle: 'Load your data from the cloud',
-                onTap: () {}
+              const TSectionHeading(
+                title: 'Account Settings',
+                showActionButton: false,
               ),
+              TSettingMenuTile(
+                  icon: Iconsax.document_upload,
+                  title: 'Load Data',
+                  subTitle: 'Load your data from the cloud',
+                  onTap: () {}),
               const SizedBox(height: TSizes.spaceBtwSections),
               SizedBox(
                 width: double.infinity,
@@ -98,9 +93,8 @@ class SettingsScreen extends StatelessWidget {
                   onPressed: () {},
                   child: const Text('Sign Out'),
                 ),
-                
               ),
-                const SizedBox(height: TSizes.spaceBtwSections * 2.5),
+              const SizedBox(height: TSizes.spaceBtwSections * 2.5),
             ],
           ),
         )
