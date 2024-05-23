@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tapu_tapi_shop/common/widgets/appbar/appbar.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/primary_header_container.dart';
@@ -7,6 +8,8 @@ import 'package:tapu_tapi_shop/common/widgets/texts/section_heading.dart';
 import 'package:tapu_tapi_shop/features/personalization/screens/settings/setting_menu_tile.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
+
+import '../address/address.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -45,7 +48,7 @@ class SettingsScreen extends StatelessWidget {
                   icon: Iconsax.safe_home,
                   title: 'My Address',
                   subTitle: 'Set your address for delivery',
-                  onTap: () {}),
+                  onTap: () => Get.to(() => const UserAddressScreen())),
               TSettingMenuTile(
                   icon: Iconsax.shopping_cart,
                   title: 'My Cart',
