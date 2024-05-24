@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tapu_tapi_shop/common/widgets/appbar/appbar.dart';
 import 'package:tapu_tapi_shop/common/widgets/appbar/tabbar.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -8,6 +9,7 @@ import 'package:tapu_tapi_shop/common/widgets/layouts/grid_layout.dart';
 import 'package:tapu_tapi_shop/common/widgets/products.cart/cart/cart_menu_icon.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/section_heading.dart';
+import 'package:tapu_tapi_shop/features/shop/screens/all_brands/all_brands.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/enums.dart';
@@ -54,7 +56,8 @@ class StoreScreen extends StatelessWidget {
                               showBackground: false),
                           const SizedBox(height: TSizes.spaceBtwSections),
                           TSectionHeading(
-                              title: 'Featured Brands', onPressed: () {}),
+                              title: 'Featured Brands',
+                              onPressed: () => Get.to(() => const AllBrands())),
                           const SizedBox(height: TSizes.spaceBtwItems / 1.5),
                           TGridLayout(
                               itemCount: 4,

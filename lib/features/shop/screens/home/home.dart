@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:tapu_tapi_shop/common/widgets/layouts/grid_layout.dart';
 import 'package:tapu_tapi_shop/common/widgets/products.cart/product_card/product_card_vertical.dart';
+import 'package:tapu_tapi_shop/features/shop/screens/all_products/all_products.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/home/widgets/promo_slider.dart';
@@ -55,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner3
                     ],
                   ),
-                  TSectionHeading(title: 'Popular Product', onPressed: () {}),
+                  TSectionHeading(title: 'Popular Product', onPressed: () => Get.to(() => const AllProducts())),
                   const SizedBox(height: TSizes.spaceBtwSections),
                   TGridLayout(
                       itemCount: 2,
