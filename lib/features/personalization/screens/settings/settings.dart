@@ -6,6 +6,8 @@ import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/primary_h
 import 'package:tapu_tapi_shop/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/section_heading.dart';
 import 'package:tapu_tapi_shop/features/personalization/screens/settings/setting_menu_tile.dart';
+import 'package:tapu_tapi_shop/features/shop/screens/cart/cart.dart';
+import 'package:tapu_tapi_shop/features/shop/screens/order/order.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
 
@@ -53,12 +55,12 @@ class SettingsScreen extends StatelessWidget {
                   icon: Iconsax.shopping_cart,
                   title: 'My Cart',
                   subTitle: 'View your cart items',
-                  onTap: () {}),
+                  onTap: () => Get.to(() => const CartScreen())),
               TSettingMenuTile(
                   icon: Iconsax.bag_tick,
                   title: 'My Orders',
                   subTitle: 'View your orders history',
-                  onTap: () {}),
+                  onTap: () => Get.to(() => const OrderScreen())),
               TSettingMenuTile(
                   icon: Iconsax.bank,
                   title: 'My Payment',

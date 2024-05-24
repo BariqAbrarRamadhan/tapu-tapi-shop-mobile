@@ -60,7 +60,8 @@ class TProductCardVertical extends StatelessWidget {
                       child: TCircularIcon(
                         icon: Iconsax.heart5,
                         color: Colors.red,
-                      ))
+                      )
+                  )
                 ],
               ),
             ),
@@ -75,7 +76,9 @@ class TProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: TSizes.spaceBtwItems / 2),
-                  TBrandTitleWithVerifiedIcon(title: 'Nike',),
+                  TBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
+                  ),
                 ],
               ),
             ),
@@ -112,4 +115,3 @@ class TProductCardVertical extends StatelessWidget {
     );
   }
 }
-
