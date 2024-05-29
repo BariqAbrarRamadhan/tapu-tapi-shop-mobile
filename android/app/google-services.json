@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971150109046",
+    "project_id": "tapu-tapi-shop",
+    "storage_bucket": "tapu-tapi-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971150109046:android:e70371efe573814b233257",
+        "android_client_info": {
+          "package_name": "com.example.tapu_tapi_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2y2YiulPFjdBOBPlL4IvbMRtIBzj6GOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

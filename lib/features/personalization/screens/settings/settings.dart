@@ -5,9 +5,11 @@ import 'package:tapu_tapi_shop/common/widgets/appbar/appbar.dart';
 import 'package:tapu_tapi_shop/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:tapu_tapi_shop/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:tapu_tapi_shop/common/widgets/texts/section_heading.dart';
+import 'package:tapu_tapi_shop/features/authenthication/screens/login/login.dart';
 import 'package:tapu_tapi_shop/features/personalization/screens/settings/setting_menu_tile.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/cart/cart.dart';
 import 'package:tapu_tapi_shop/features/shop/screens/order/order.dart';
+import 'package:tapu_tapi_shop/services/auth_service.dart';
 import 'package:tapu_tapi_shop/utils/constants/colors.dart';
 import 'package:tapu_tapi_shop/utils/constants/sizes.dart';
 
@@ -15,6 +17,12 @@ import '../address/address.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
+
+  void logout() async {
+    final authService = AuthService();
+    authService.singOut();
+    Get.to(() => const LoginScreen());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +103,7 @@ class SettingsScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: logout,
                   child: const Text('Sign Out'),
                 ),
               ),

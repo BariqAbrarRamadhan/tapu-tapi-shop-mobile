@@ -47,21 +47,21 @@ class TProductCardVertical extends StatelessWidget {
                       backgroundColor: TColors.secondary.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(
                           horizontal: TSizes.sm, vertical: TSizes.xs),
-                      child: Text('25%',
+                      child: Text('',
                           style: Theme.of(context)
                               .textTheme
                               .labelLarge!
                               .apply(color: TColors.black)),
                     ),
                   ),
-                  const Positioned(
-                      top: 0,
-                      right: 0,
-                      child: TCircularIcon(
-                        icon: Iconsax.heart5,
-                        color: Colors.red,
-                      )
-                  )
+                  // const Positioned(
+                  //     top: 0,
+                  //     right: 0,
+                  //     child: TCircularIcon(
+                  //       icon: Iconsax.heart5,
+                  //       color: Colors.red,
+                  //     )
+                  // )
                 ],
               ),
             ),
@@ -72,7 +72,7 @@ class TProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TProductTitleText(
-                    title: 'Green Nike Air Shoes',
+                    title: 'Nike Vaporfly 3',
                     smallSize: true,
                   ),
                   SizedBox(height: TSizes.spaceBtwItems / 2),
@@ -89,7 +89,7 @@ class TProductCardVertical extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: TProductPriceText(
-                    price: '35.0',
+                    price: '3,399,000',
                   ),
                 ),
                 Container(
